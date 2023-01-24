@@ -1,10 +1,13 @@
 import React from 'react'
-
+import logo from "../Assets/logo.png"
 const Header = () => {
     return (
         <div className="hidden lg:inline-flex sticky top-5 w-screen h-fit px-3 justify-between items-center py-5">
-            <div className='flex-1'>
-                <p className="text-3xl font-sans p-3 text-white font-extrabold">Adv Rajan Ladkat</p>
+            <div className='flex items-center flex-1'>
+                <div className='bg-white w-fit h-fit rounded-full'>
+                    <img src={logo} alt="img" className="w-16 h-16 object-contain" />
+                </div>
+                <p className="text-3xl cursor-pointer font-sans p-3 text-white font-extrabold">Adv Rajan Ladkat</p>
             </div>
             <div className="flex flex-1 list-none text-lg font-extralight text-white space-x-7">
                 <a href="services" className="cursor-pointer hover:scale-105 duration-200 ease-linear">Services</a>

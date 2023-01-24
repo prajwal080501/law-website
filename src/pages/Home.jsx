@@ -27,7 +27,7 @@ const Home = () => {
         <section id='testimonials'>
         <Testimonials/>
         </section>
-        {/* <Services/> */}
+        <Services/>
         <section id='contact'>
         <Form/>
         </section>
