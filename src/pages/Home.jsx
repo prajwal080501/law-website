@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import Features from '../components/Features'
 import Footer from '../components/Footer'
 import Form from '../components/Form'
@@ -11,10 +12,16 @@ import Services from '../components/Services'
 import Testimonials from '../components/Testimonials'
 
 const Home = () => {
+  const[open,setOpen] = useState(false)
+
+
+  const handleOpen = () => {
+    setOpen(!open)
+  }
   return (
     <div className='w-full h-full overflow-y-scroll'>
         <Header/>
-        <Menu/>
+        <Menu open={open} handleOpen={handleOpen}/>
         <section id='hero'>
         <Hero/>
         </section>
